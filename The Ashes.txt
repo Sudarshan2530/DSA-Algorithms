@@ -1,0 +1,30 @@
+The Ashes! (But One day)
+
+import java.util.*;
+
+public class Main{
+    
+    public static void theAshes(int AusScore, int EngScore){
+        
+        if(AusScore>EngScore)
+        {
+            System.out.println("Australia");
+        }
+        else if(EngScore>AusScore)
+        {
+            System.out.println("England");
+        }
+        else if(EngScore == AusScore)
+        {
+            System.out.println("Tie");
+        }
+    }
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        
+        int AusScore = input.nextInt();
+        int EngScore = input.nextInt();
+        
+        theAshes(AusScore, EngScore);
+    }
+}

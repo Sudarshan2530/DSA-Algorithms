@@ -1,0 +1,45 @@
+Profile Pic
+
+You are given two integers, stored in the variable with the following names 
+
+L, W
+
+Also, you are given another two integers, stored in the variable with the following names
+
+length & width
+
+If the value stored in length is greater than the value stored in L and the value stored in width, is greater than the value stored in W, printUpload
+
+Else If the value stored in length is less than the value stored in L, printIncrease Length
+
+Else if the value stored in width, is less than the value stored in W, printIncrease Width
+
+Solution:- 
+
+import java.util.*;
+
+public class Main{
+    
+    public static void profilePic(int L, int W, int length, int width){
+        if(length>L && width>W)
+        {
+            System.out.print("Upload");
+        }
+        else if(length<L){
+            System.out.print("Increase Length");
+        }
+        else if(width<W){
+            System.out.print("Increase Width");
+        }
+    }
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        
+        int L = input.nextInt();
+        int W = input.nextInt();
+        int length = input.nextInt();
+        int width = input.nextInt();
+        
+        profilePic(L, W, length, width);
+    }
+}

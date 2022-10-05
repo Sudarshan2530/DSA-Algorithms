@@ -1,0 +1,37 @@
+Hint
+Check multiples of 3, 5 and 15.
+
+Short Explanation
+For first N natural numbers multiples of 3 are termed as "Fizz", multiples of 5 are termed as "Buzz", while multiples of 15 are termed as "FizzBuzz". Rest all numbers remain in their original form.
+Detailed Explanation
+All natural numbers divisible by 3 and not by 5 are called as "Fizz" while those divisible by 5 and not by 3 are called as "Buzz". If any number is divisible by both it's called as "FizzBuzz". Rest all natural numbers remain in their original form.
+
+Hence iterating over all natural numbers from 1 to N and, checking whether the ith number ( 1 <= i <= N ) is divisible by 3 or, 5 or, both will fetch the result accordingly.
+
+========================================
+
+solution 
+
+import java.lang.*;
+import java.io.*;
+import java.util.*;
+
+
+class Main{
+	//This function prints the elements according to the condition mentioned in the question.
+	public static void fizzBuzz(int n){
+		for (int i=1;i<=n;i++){
+			if (i % 3 == 0 && i % 5 == 0) System.out.print("FizzBuzz" + " ");
+			else if (i % 3 == 0) System.out.print("Fizz" + " ");
+			else if (i % 5 == 0) System.out.print("Buzz" + " ");
+			else{
+				System.out.print(i + " ");
+			}
+		}
+	}
+	//Main Function
+	public static void main(String[] args){
+		int n = 10;
+		fizzBuzz(n);
+	}
+}

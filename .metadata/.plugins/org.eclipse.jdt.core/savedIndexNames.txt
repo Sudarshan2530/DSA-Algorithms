@@ -1,4 +1,4 @@
-INDEX VERSION 1.131+C:\Users\ADMIN\Desktop\DSA in Java\.metadata\.plugins\org.eclipse.jdt.core
+INDEX VERSION 1.131+C:\Users\ADMIN\Desktop\DSA-Algorithms\.metadata\.plugins\org.eclipse.jdt.core
+4065709502.index
 1865797976.index
 59287333.index
-4065709502.index

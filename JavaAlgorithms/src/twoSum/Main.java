@@ -1,0 +1,57 @@
+package twoSum;
+import java.util.*;
+
+public class Main{
+    
+    public static String twoSum(int[]array, int n, int b)
+    {
+           int left = 0;
+           int right = n-1;
+          
+           while(left < right){
+           
+               int sum = array[left] + array[right];
+               
+               if(sum == b)
+               {
+                 return left+" "+right;
+               }
+               else if(sum > b)
+               {
+                   right--;
+               }
+               else
+               {
+                   left++;
+               }
+            }
+           
+            return -1+" "+-1;
+          }
+   
+    
+    public static void main(String[] args)
+    {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter test cases");
+        int T = input.nextInt();
+        
+        for(int i = 0; i < T; i++){
+        System.out.println("assign size to the array");
+            int n = input.nextInt();
+            System.out.println("enter the target sum");
+            int b = input.nextInt();
+            
+            int[] array = new int[n];
+            System.out.println("Enter array elements");
+            for(int j = 0; j < n; j++){
+            
+                array[j] = input.nextInt();
+            }
+            
+           System.out.println(twoSum(array, n, b));
+            
+        }
+    }
+    
+}
